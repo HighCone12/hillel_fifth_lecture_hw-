@@ -1,2 +1,6 @@
-methods_list = ['add','clear','copy','difference','discard','intersection','isdisjoint','issubset','issuperset','pop','remove','union','update']
-print(methods_list)
+methods_list = dir(str)
+for i in methods_list:
+    while i != '__':
+        methods_list = i
+        print(methods_list)
+        break
